@@ -1,13 +1,13 @@
 import { ChakraProvider } from "@chakra-ui/provider";
-import { ColorModeProvider, CSSReset } from "@chakra-ui/react";
+import Main from "../components/Layout";
 import themes from "../themes/themes";
 
 function MyApp({ Component, pageProps }) {
   return (
     <ChakraProvider theme={themes}>
-      <ColorModeProvider>
+      <Main>
         <Component {...pageProps} />
-      </ColorModeProvider>
+      </Main>
     </ChakraProvider>
   );
 }
