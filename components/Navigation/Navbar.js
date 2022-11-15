@@ -7,6 +7,7 @@ import {
   IconButton,
   Menu,
   MenuButton,
+  MenuItem,
   MenuList,
   Stack,
   useColorModeValue,
@@ -58,7 +59,7 @@ export const Navbar = (props) => {
           </NavLink>
         </Stack>
 
-        <Box flex={1} align="rigth">
+        <Box align="rigth">
           <ThemeToggleButton />
           <Box ml={2} display={{ base: "inline-block", md: "none" }}>
             <Menu>
@@ -73,12 +74,17 @@ export const Navbar = (props) => {
                   href='/profile'
                   passHref
                >
-                  Profile
+                  <MenuItem>Profile</MenuItem>
                </NavLink>
                <NavLink
                   href='/card'
                >
-                  Cart
+                  <MenuItem>Cart</MenuItem>
+               </NavLink>
+               <NavLink
+                href='/'
+               >
+                  <MenuItem>Log Out</MenuItem>
                </NavLink>
               </MenuList>
             </Menu>
