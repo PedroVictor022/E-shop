@@ -82,9 +82,9 @@ export const Navbar = (props) => {
                   <MenuItem>Cart</MenuItem>
                </NavLink>
                <NavLink
-                href='/'
+                href='/createAccount'
                >
-                  <MenuItem>Log Out</MenuItem>
+                  <MenuItem>Create Account</MenuItem>
                </NavLink>
               </MenuList>
             </Menu>
